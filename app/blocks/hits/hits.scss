@@ -1,0 +1,54 @@
+.hits {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__item{
+        border-radius: 30px;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+
+        &:hover{
+            .hits{
+                &__item{
+                    &-info{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        &-info{
+            display: flex;
+            transition: all .3s;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            @include adaptive-padding(40,15);
+            background-color: #00000083;
+            color: #fff;
+            opacity: 0;
+        }
+        &-img{
+            z-index: 1;
+        }
+        &-title{
+            font-family: MontserratSemiBold;
+            @include adaptive-font(20, 12);
+            @include adaptive-marginBottom(20,10);
+        }
+        &-text{
+            font-family: MontserratRegular;
+            @include adaptive-font(16, 10);
+            text-align: center;
+        }
+    }
+}

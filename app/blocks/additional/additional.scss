@@ -1,0 +1,23 @@
+.additional {
+    &__info {
+        &-item{
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+        }
+        &-title {
+            margin-bottom: 10px;
+        }
+
+        &-text {
+            a{
+                color: #000;
+                transition: all .3s;
+                text-decoration: underline;
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}

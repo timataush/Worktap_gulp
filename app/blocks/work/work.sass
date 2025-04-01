@@ -1,0 +1,202 @@
+.work
+  padding: 80px 0 0 0
+  height: 800px
+  width: 100%
+  font-family: 'Montserrat', sans-serif
+
+  &__container
+    max-width: 1320px
+    margin: 0 auto
+    padding: 0 32px
+
+  &__titlexa
+    font-family: 'Montserrat', sans-serif
+    font-weight: 600
+    font-size: 24px
+    line-height: 100%
+    color: #333333
+    letter-spacing: 2px
+    margin-bottom: 77px
+
+  &__grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 24px
+    margin-bottom: 40px
+
+  &__card
+    background: white
+    border-radius: 16px
+    padding: 20px
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05)
+    transition: all 0.3s ease
+    position: relative
+    height: 270px
+    width: 420px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    overflow: hidden
+
+    &:hover
+      transform: translateY(-5px)
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1)
+
+    &-title
+      font-weight: 600
+      font-size: 18px
+      line-height: 100%
+      color: #222222
+      display: flex
+      flex-direction: column
+      margin-bottom: 24px
+      margin-top: 15px
+
+    &-last
+      background-color: #F2F0FE
+      display: flex
+      align-items: center
+      justify-content: center
+      cursor: pointer
+      transition: background 0.3s ease
+      border: none
+      padding: 0
+
+      //&:hover
+        //background: #18a966
+        //color: #F2F0FE
+
+
+    &-text
+      font-weight: 400
+      font-size: 14px
+      line-height: 100%
+      color: #222222
+      width: 380px
+      height: 85px
+      margin-bottom: 24px
+      &-last
+        color: #1DBF73
+        font-weight: 600
+        font-size: 18px
+        margin: 0
+        text-align: center
+        padding: 24px
+        width: 100%
+        //&:hover
+          //color: #F2F0FE
+
+
+
+    &-person
+      display: flex
+      align-items: center
+      margin-bottom: 16px
+
+
+    &-logo
+      width: 44px
+      height: 44px
+      margin-right: 25px
+
+    &-btn
+      background: transparent
+      border: 1px solid #1DBF73
+      border-radius: 50px
+      padding: 12px 24px
+      color: #1DBF73
+      font-weight: 500
+      font-size: 14px
+      line-height: 100%
+      cursor: pointer
+      transition: all 0.2s ease
+      width: 100%
+      text-align: center
+      box-sizing: border-box
+
+      &:hover
+        background: #1DBF73
+        color: white
+
+
+      &:hover
+        background: #1DBF73
+        color: white
+
+
+
+.work
+  @media (max-width: 1287px)
+    &__card
+      width: 100%
+      &-text
+        width: 100%
+        font-size: 12px
+        margin-bottom: 10px
+        &-last
+          display: contents
+          align-items: center
+          font-size: 17px
+
+  @media (max-width: 1280px)
+    //&__card
+    //  width: 100%
+  @media (max-width: 1200px)
+    //&__card
+    //  width: 100%
+    //&__card
+
+  @media (max-width: 1019px)
+    height: 100%
+    &__grid
+      grid-template-columns: repeat(2, 1fr)
+      gap: 18px
+    &__card
+      &-text
+        font-size: 14px
+        &-last
+          font-size: 22px
+
+
+
+  @media (max-width: 832px)
+    &__grid
+      grid-template-columns: repeat(1, 2fr)
+      gap: 10px
+    &__card
+      &-text
+        font-size: 15px
+        &-last
+          font-size: 22px
+
+
+      &-person
+        flex-direction: column
+        margin: 0 auto
+      &-logo
+        width: 65px
+        height: 65px
+
+
+
+  @media (max-width: 756px)
+    &__card
+      &-text
+        //font-size: 10px
+        //display: none
+
+  @media (max-width: 622px)
+    &__card
+      &-text
+        font-size: 13px
+      &-title
+        margin-bottom: 8px
+  @media (max-width: 468px)
+    &__card
+      justify-content: space-around
+      &-text
+        display: none
+        &-last
+          display: block
+          font-size: 22px
+

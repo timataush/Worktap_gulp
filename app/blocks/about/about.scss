@@ -1,0 +1,19 @@
+.about {
+
+    &__info {
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+        &-title{
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text{
+        li{
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

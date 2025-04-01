@@ -1,0 +1,38 @@
+.advantages {
+    background-color: #fff;
+
+    &__list {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &-icon {
+            @include adaptive-width(70, 20);
+            @include adaptive-height(70, 20);
+            @include adaptive-marginBottom(20,10);
+        }
+
+        &-text {
+            width: 50%;
+            text-align: center;
+            font-family: MontserratSemiBold;
+            @include adaptive-font(18,10);
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .advantages{
+        &__list{
+            width: 100%;
+        }
+    }
+}

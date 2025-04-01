@@ -1,0 +1,20 @@
+.thanks {
+    &__title {
+        text-align: center;
+        font-family: MontserratBold;
+        @include adaptive-font(50, 25);
+        @include adaptive-marginBottom(40,20);
+    }
+
+    &__text{
+        text-align: center;
+        font-family: MontserratMedium;
+        @include adaptive-font(30, 15);
+        @include adaptive-marginBottom(40,20);
+    }
+
+    &__btn{
+        text-align: center;
+        width: 100%;
+    }
+}
