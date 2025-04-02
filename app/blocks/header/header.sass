@@ -119,7 +119,7 @@
 
   @media (max-width: 1200px)
     &__logo
-     display: none!important
+     //display: none!important
 
   @media (max-width: 1019px)
     height: 90px
@@ -128,11 +128,16 @@
     &__menu
       display: none!important
     &__actions
+      justify-content: flex-end
       display: flex
-      justify-content: space-between
       align-items: center
       width: 100%
 
+  @media (max-width: 560px)
+    &__logo
+      display: none!important
+    &__actions
+      justify-content: space-between
 
 
 
