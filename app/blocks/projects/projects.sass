@@ -155,6 +155,23 @@
       overflow: hidden
       text-overflow: ellipsis
       width: 100%
+    &-btn
+      border: 1px solid #1DBF73
+      border-radius: 50px
+      padding: 12px 24px
+      color: #1DBF73
+      background-color: white
+      font-weight: 600
+      font-size: 16px
+      cursor: pointer
+      transition: background 0.2s ease
+      width: 19%
+      box-sizing: border-box
+      text-align: center
+
+      &:hover
+        background: #18a966
+        color: white
 
     &-specialty
       color: #FBA457
@@ -183,29 +200,10 @@
         width: 22px
         height: 22px
         color: #FBA457
-  &__rate
-    //display: flex
-    //align-items: center
-    //flex-direction: row
-    //justify-content: center
-    &-btn
-      border: 1px solid #1DBF73
-      border-radius: 50px
-      padding: 12px 24px
-      color: #1DBF73
-      background-color: white
-      font-weight: 600
-      font-size: 16px
-      cursor: pointer
-      transition: background 0.2s ease
-      width: 100%
-      box-sizing: border-box
-      text-align: center
-
-      &:hover
-        background: #18a966
-        color: white
-
+  &__viewall
+    display: flex
+    align-items: center
+    justify-content: center
   &__description
     display: flex
     align-items: center
@@ -220,26 +218,6 @@
       color: #656084
       font-weight: 400
       font-size: 18px
-
-
-
-  &__view-all
-    display: flex
-    align-items: center
-    justify-content: center
-    background-color: #F2F0FE
-    border-radius: 16px
-    cursor: pointer
-    transition: all 0.3s ease
-    height: 261px
-    width: 100%
-    max-width: 420px
-    margin: 0 auto
-    box-sizing: border-box
-
-    &:hover
-      transform: translateY(-5px)
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1)
 
     &-text
       color: #1DBF73

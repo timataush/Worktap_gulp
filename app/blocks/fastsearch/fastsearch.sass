@@ -1,9 +1,28 @@
 .fastsearch
+  transition: all 0.3s ease
+
   height: 800px
   width: 100%
   background-color: #F7F6FF
   //box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05)
   position: relative
+
+  //&.search-stage-1
+  //  .fastsearch__title
+  //  .fastsearch__scroll
+  //  .fastsearch__categories
+  //
+  //&.search-stage-2
+  //  .fastsearch__title
+  //  .fastsearch__scroll
+  //  .fastsearch__categories
+  //
+  //&.search-stage-3
+  //  .fastsearch__title
+  //  .fastsearch__scroll
+  //  .fastsearch__categories
+
+
   &__ellipse
     z-index: 100
     position: absolute
@@ -73,6 +92,9 @@
     font-size: 36px
     line-height: 100%
     color: #333333
+
+    //transition: all 0.3s ease
+
     &-first
       padding-left: 45px
     &-green
@@ -89,12 +111,35 @@
     line-height: 100%
     color: #333333
     letter-spacing: 0
-  &__search
-    padding: 70px 0 0 0
-    height: 60px
-    position: relative
-    margin-bottom: 60px
+
+
+  &__scroll
+
+    //padding: 70px 0 0 0
+    //height: 60px
+    //position: relative
+    margin-bottom: 30px
     width: 50%
+    transition: all 0.3s ease
+    padding-top: 70px
+
+
+    //&.is-sticky
+    //  position: fixed
+    //  top: 0
+    //  left: 0
+    //  right: 0
+    //  width: 100%
+    //  max-width: 800px
+    //  margin: 0 auto
+    //  padding: 10px 20px
+    //  background-color: #fff
+    //  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1)
+    //  border-radius: 0 0 20px 20px
+    //  z-index: 999
+
+  &__search
+    position: relative
 
     &-input
       width: 100%
@@ -150,6 +195,8 @@
     grid-template-columns: repeat(4, minmax(0, 1fr))
     gap: 16px
     padding: 40px 0 0 0
+
+    //transition: all 0.3s ease
 
     &-item
       //background-color: #F2F0FE
